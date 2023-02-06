@@ -31,10 +31,10 @@ jobs:
           ls -ltra
                     
           # Building Docker image for mysql
-          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/webapp-dev-mysql:v1.0 .
-          docker push $ECR_REGISTRY/webapp-dev-mysql:v1.0
+          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/assignment-1-dev-mysql:v1.0 .
+          docker push $ECR_REGISTRY/assignment-1-dev-mysql:v1.0
           
           # Building docker for webapp
-          docker build -f Dockerfile -t $ECR_REGISTRY/webapp-dev-app:v1.0 .
-          docker push $ECR_REGISTRY/webapp-dev-app:v1.0
+          docker build -f Dockerfile -t $ECR_REGISTRY/assignment-1-dev-app:v1.0 .
+          docker push $ECR_REGISTRY/assignment-1-dev-app:v1.0
           docker images
