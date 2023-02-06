@@ -13,7 +13,6 @@ data "aws_ami" "latest_amazon_linux" {
   }
 }
 
-
 # Data source for availability zones in us-east-1
 data "aws_availability_zones" "available" {
   state = "available"
